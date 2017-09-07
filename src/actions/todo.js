@@ -11,3 +11,11 @@ export function addTodo(text) {
     }
   })
 }
+
+export function removeTodo(id) {
+  store.dispatch({
+    type: 'REMOVE_TODO',
+    id: id
+  })
+
+}
