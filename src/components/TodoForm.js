@@ -8,10 +8,10 @@ class TodoForm extends React.Component {
 
   handleSumbit = (e) =>  {
     e.preventDefault()
+    addTodo(this.state.value)
     this.setState({
       value :''
     })
-    addTodo(this.state.value)
   }
 
   handleChange = (e) => {
